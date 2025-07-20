@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #548687;
+    text-align: center;
+    background-image: url("optimus1_img.jpg");
+    background-size: cover;
+  }
+
+  h1 {
+    margin-top: 1%;
+    color: #e0e0e0;
+  }
+  
+  .container {
+    height: 90vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 70vmin;
+    width: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    height: 14vmin;
+    width: 14vmin;
+    border-radius: 1rem;
+    border: 2px solid #ffffc7;
+    background-image: url("optimus5_img.jpeg");
+    background-size: cover;
+    cursor: pointer;
+
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Neon cyan */
+    text-shadow: 
+      0 0 5px #0ff, 
+      0 0 10px #0ff, 
+      0 0 20px #0ff, 
+      0 0 40px #0ff, 
+      0 0 80px #0ff;
+  }
+  
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  #reset-btn:hover {
+    background-color: #45a049;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  #new-btn:hover {
+    background-color: #45a049;
+  }
+  
+  #msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }

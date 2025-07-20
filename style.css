@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #548687;
+    text-align: center;
+    background-image: url("optimus4_img.jpg");
+    background-size: cover;
+  }
+
+  h1 {
+    margin-top: 1%;
+    color: #e0e0e0;
+  }
+  
+  .container {
+    height: 70vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    margin-right: 27%;
+  }
+  
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: 2px solid #ffffc7;
+    background-image: url("optimus5_img.jpeg");
+    background-size: cover;
+    transition: all;
+    transition-duration: 0.7s;
+    cursor: pointer;
+
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Neon cyan */
+    text-shadow: 
+      0 0 5px #0ff, 
+      0 0 10px #0ff, 
+      0 0 20px #0ff, 
+      0 0 40px #0ff, 
+      0 0 80px #0ff;
+  }
+
+  .box:hover {
+    background-color: #e0e0e0;
+  } 
+
+  .box:active {
+    background-color: red;
+  } 
+  
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  #reset-btn:hover {
+    background-color: #45a049;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  #new-btn:hover {
+    background-color: #45a049;
+  }
+
+  #msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+   #four-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #191913;
+    border-radius: 1rem;
+    border: none;
+    margin-right: 90%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    cursor: pointer;
+  }
+
+  #four-btn:hover {
+    background-color: #4a5759;
+  }
+
+  #five-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #191913;
+    border-radius: 1rem;
+    border: none;
+    margin-right: 90%;
+    cursor: pointer;
+  }
+
+  #five-btn:hover {
+    background-color: #4a5759;
+  }
+
+  #game-container {
+    margin-right:10%;
+    margin-bottom: 18%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+
+  a {
+    text-decoration: none ;
+    color: #fff;
+  }
+
+  /* X and O animation 
+
+  .X {
+    transition: all;
+    transition: 2px 2s ease-in 0.2s;
+    animation: X 2s linear 3s infinite normal;
+  }
+
+   .X:active {
+    color: #b0413e;
+    background-color: blue;
+  } */
+
+  @media (min-width: 725px) and (max-width: 876px) {
+    .box {
+      height: 15vmin;
+      width: 15vmin;
+      font-size: 3rem;
+    }
+  }
+
+  @media (min-width: 550px) and (max-width: 724px) {
+    .box {
+      height: 12vmin;
+      width: 12vmin;
+      font-size: 3rem;
+    }
+  }
+
+   @media (min-width: 441px) and (max-width: 548px) {
+    .box {
+      height: 12vmin;
+      width: 12vmin;
+      font-size: 3rem;
+    }
+  }
+
+ @media (min-width: 300px) and (max-width: 549px) {
+    .box {
+      height: 8vmin;
+      width: 8vmin;
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 299px) {
+    .box {
+      height: 7vmin;
+      width: 7vmin;
+      font-size: 0.7rem;
+    }
+  }
